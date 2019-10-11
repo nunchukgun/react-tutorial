@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom"
+import Home from './components/tableOfContents/Home'
+import withStyles from '@material-ui/core/styles/withStyles'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const styles = (theme) => ({
+    app: {
+        display: 'flex'
+    }
+})
+
+class App extends React.Component {
+    render = () => {
+        const {classes} = this.props
+        return (
+            <Router>
+                <div>
+                    <Switch>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/users">
+                            <Users />
+                        </Route>
+                        <Route path="/">
+                            <Home />
+                        </Route>
+                    </Switch>
+                </div>
+            </Router>
+        )
+    }
 }
 
-export default App;
+function About() {
+    return <h2>About</h2>;
+}
+
+function Users() {
+    return <h2>Users</h2>;
+}
+
+export default withStyles(styles)(App)
