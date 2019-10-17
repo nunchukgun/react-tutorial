@@ -5,18 +5,11 @@ import {
     Route
 } from "react-router-dom"
 import ButtonCounter from './components/exercises/ButtonCounter'
+import BCSolution from './components/solutions/ButtonCounterSolution'
 import Home from './components/tableOfContents/Home'
-import withStyles from '@material-ui/core/styles/withStyles'
-
-const styles = (theme) => ({
-    app: {
-        display: 'flex'
-    }
-})
 
 class App extends React.Component {
     render = () => {
-        const {classes} = this.props
         return (
             <Router>
                 <div>
@@ -24,8 +17,8 @@ class App extends React.Component {
                         <Route path="/counting">
                             <ButtonCounter />
                         </Route>
-                        <Route path="/users">
-                            <Users />
+                        <Route path="/counting-solution">
+                            <BCSolution />
                         </Route>
                         <Route path="/">
                             <Home />
@@ -37,12 +30,4 @@ class App extends React.Component {
     }
 }
 
-function About() {
-    return <h2>About</h2>;
-}
-
-function Users() {
-    return <h2>Users</h2>;
-}
-
-export default withStyles(styles)(App)
+export default App
