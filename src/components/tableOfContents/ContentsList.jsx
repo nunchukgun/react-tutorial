@@ -17,12 +17,12 @@ class ContentsList extends React.Component {
         return (
             <Grid container spacing={4} className={classes.gridContainer}>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/About'} variant={'outlined'} color={'primary'}>
+                    <Button component={RouterLink} to={'/counting'} variant={'outlined'} color={'primary'}>
                         Counting With State
                     </Button>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/About'} variant={'outlined'} color={'primary'}>
+                    <Button component={RouterLink} to={'/counting-solution'} variant={'outlined'} color={'primary'}>
                         Counting With State (Solutions)
                     </Button>
                 </Grid>

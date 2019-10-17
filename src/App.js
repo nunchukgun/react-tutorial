@@ -4,6 +4,7 @@ import {
     Switch,
     Route
 } from "react-router-dom"
+import ButtonCounter from './components/exercises/ButtonCounter'
 import Home from './components/tableOfContents/Home'
 import withStyles from '@material-ui/core/styles/withStyles'
 
@@ -20,8 +21,8 @@ class App extends React.Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/about">
-                            <About />
+                        <Route path="/counting">
+                            <ButtonCounter />
                         </Route>
                         <Route path="/users">
                             <Users />
