@@ -1,8 +1,10 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
+import CardHeader from '@material-ui/core/CardHeader'
 import Typography from '@material-ui/core/Typography'
 import GreenCard from './GreenCard'
+import CardContent from '@material-ui/core/CardContent'
 
 class StateAndFuncsAsProps extends React.Component {
     constructor(props){
@@ -18,9 +20,12 @@ class StateAndFuncsAsProps extends React.Component {
                 <Grid container spacing={4}>
                     <Grid item xs={6}>
                         <Card>
-                            <Typography variant={'h3'}>
-                                {this.state.messageText}
-                            </Typography>
+                            <CardHeader title={<Typography>Displayed Message Text: </Typography>}/>
+                            <CardContent>
+                                <Typography variant={'h3'}>
+                                    {this.state.messageText}
+                                </Typography>
+                            </CardContent>
                         </Card>
                     </Grid>
                     <Grid item xs={6}>
