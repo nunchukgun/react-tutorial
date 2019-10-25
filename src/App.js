@@ -16,7 +16,6 @@ class App extends React.Component {
     render = () => {
         return (
             <Router>
-                <div>
                     <Switch>
                         <Route path="/counting">
                             <ButtonCounter />
@@ -40,7 +39,6 @@ class App extends React.Component {
                             <Home />
                         </Route>
                     </Switch>
-                </div>
             </Router>
         )
     }

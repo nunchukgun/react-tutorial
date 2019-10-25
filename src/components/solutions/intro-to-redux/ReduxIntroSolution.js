@@ -10,8 +10,6 @@ import {connect} from 'react-redux'
 
 const ReduxIntroSolution = (props) => {
     
-    const { messageText } = props
-    
     return (
         <div style={{margin: '5%'}}>
             <Grid container spacing={4}>
