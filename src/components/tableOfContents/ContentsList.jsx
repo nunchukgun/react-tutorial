@@ -28,12 +28,22 @@ class ContentsList extends React.Component {
                 </Grid>
                 <Grid item xs={6}>
                     <Button component={RouterLink} to={'/state-func-props'} variant={'outlined'} color={'primary'}>
-                        State And Funcs as Props
+                        State and Funcs as Props
                     </Button>
                 </Grid>
                 <Grid item xs={6}>
                     <Button component={RouterLink} to={'/state-func-props-solution'} variant={'outlined'} color={'primary'}>
-                        State And Funcs as Props (Solution)
+                        State and Funcs as Props (Solution)
+                    </Button>
+                </Grid>
+                <Grid item xs={6}>
+                    <Button component={RouterLink} to={'/intro-to-redux'} variant={'outlined'} color={'primary'}>
+                        Intro to Redux
+                    </Button>
+                </Grid>
+                <Grid item xs={6}>
+                    <Button component={RouterLink} to={'/intro-to-redux-solution'} variant={'outlined'} color={'primary'}>
+                        Intro to Redux (Solution)
                     </Button>
                 </Grid>
             </Grid>
