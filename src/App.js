@@ -4,8 +4,10 @@ import {
     Switch,
     Route
 } from "react-router-dom"
-import ButtonCounter from './components/exercises/ButtonCounter'
-import BCSolution from './components/solutions/ButtonCounterSolution'
+import ButtonCounter from './components/exercises/button-counter/ButtonCounter'
+import BCSolution from './components/solutions/button-counter/ButtonCounterSolution'
+import StateAndFuncsAsProps from './components/exercises/state-func-props/StateAndFuncsAsProps'
+import StateAndFuncsAsPropsSolution from './components/solutions/state-func-props/StateAndFuncsAsPropsSolution'
 import Home from './components/tableOfContents/Home'
 
 class App extends React.Component {
@@ -19,6 +21,12 @@ class App extends React.Component {
                         </Route>
                         <Route path="/counting-solution">
                             <BCSolution />
+                        </Route>
+                        <Route path="/state-func-props">
+                            <StateAndFuncsAsProps/>
+                        </Route>
+                        <Route path="/state-func-props-solution">
+                            <StateAndFuncsAsPropsSolution/>
                         </Route>
                         <Route path="/">
                             <Home />

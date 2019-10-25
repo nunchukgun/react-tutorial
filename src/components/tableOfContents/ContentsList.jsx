@@ -23,7 +23,17 @@ class ContentsList extends React.Component {
                 </Grid>
                 <Grid item xs={6}>
                     <Button component={RouterLink} to={'/counting-solution'} variant={'outlined'} color={'primary'}>
-                        Counting With State (Solutions)
+                        Counting With State (Solution)
+                    </Button>
+                </Grid>
+                <Grid item xs={6}>
+                    <Button component={RouterLink} to={'/state-func-props'} variant={'outlined'} color={'primary'}>
+                        State And Funcs as Props
+                    </Button>
+                </Grid>
+                <Grid item xs={6}>
+                    <Button component={RouterLink} to={'/state-func-props-solution'} variant={'outlined'} color={'primary'}>
+                        State And Funcs as Props (Solution)
                     </Button>
                 </Grid>
             </Grid>
