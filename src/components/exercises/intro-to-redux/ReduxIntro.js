@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import GreenCard from './GreenCard'
 import CardContent from '@material-ui/core/CardContent'
 import {connect} from 'react-redux'
+import PurpleCard from '../../solutions/state-func-props/PurpleCard'
 
 class ReduxIntro extends React.Component {
     constructor(props){
@@ -23,9 +24,7 @@ class ReduxIntro extends React.Component {
                         <Card>
                             <CardHeader title={<Typography>Displayed Message Text: </Typography>}/>
                             <CardContent>
-                                <Typography variant={'h3'}>
-                                    {this.state.messageText}
-                                </Typography>
+                                <PurpleCard messageText={this.state.messageText}/>
                             </CardContent>
                         </Card>
                     </Grid>

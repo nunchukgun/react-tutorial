@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
 import Typography from '@material-ui/core/Typography'
 import GreenCard from './GreenCard'
+import PurpleCard from './PurpleCard'
 import CardContent from '@material-ui/core/CardContent'
 import {connect} from 'react-redux'
 
@@ -18,9 +19,7 @@ const ReduxIntroSolution = (props) => {
                     <Card>
                         <CardHeader title={<Typography>Displayed Message Text: </Typography>}/>
                         <CardContent>
-                            <Typography variant={'h3'}>
-                                {messageText}
-                            </Typography>
+                            <PurpleCard/>
                         </CardContent>
                     </Card>
                 </Grid>

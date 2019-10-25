@@ -5,6 +5,7 @@ import CardHeader from '@material-ui/core/CardHeader'
 import Typography from '@material-ui/core/Typography'
 import GreenCard from './GreenCard'
 import CardContent from '@material-ui/core/CardContent'
+import PurpleCard from '../../solutions/state-func-props/PurpleCard'
 
 class StateAndFuncsAsProps extends React.Component {
     constructor(props){
@@ -22,9 +23,7 @@ class StateAndFuncsAsProps extends React.Component {
                         <Card>
                             <CardHeader title={<Typography>Displayed Message Text: </Typography>}/>
                             <CardContent>
-                                <Typography variant={'h3'}>
-                                    {this.state.messageText}
-                                </Typography>
+                                <PurpleCard messageText={this.state.messageText}/>
                             </CardContent>
                         </Card>
                     </Grid>
