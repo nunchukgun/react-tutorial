@@ -10,6 +10,15 @@ const styles = (theme) => ({
     }
 })
 
+const RouterButton = (props) => {
+    const {path, text} = props
+    return (
+        <Button component={RouterLink} to={path} variant={'outlined'} color={'primary'} style={{width: '100%'}}>
+            {text}
+        </Button>
+    )
+}
+
 class ContentsList extends React.Component {
     render = () => {
         const {classes} = this.props
@@ -17,34 +26,22 @@ class ContentsList extends React.Component {
         return (
             <Grid container spacing={4} className={classes.gridContainer}>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/counting'} variant={'outlined'} color={'primary'}>
-                        Counting With State
-                    </Button>
+                    <RouterButton path={'/counting'} text={'Counting With State'}/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/counting-solution'} variant={'outlined'} color={'primary'}>
-                        Counting With State (Solution)
-                    </Button>
+                    <RouterButton path={'/counting-solution'} text={'Counting With State (Solution)'}/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/state-func-props'} variant={'outlined'} color={'primary'}>
-                        State and Funcs as Props
-                    </Button>
+                    <RouterButton path={'/state-func-props'} text={'State and Funcs as Props'}/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/state-func-props-solution'} variant={'outlined'} color={'primary'}>
-                        State and Funcs as Props (Solution)
-                    </Button>
+                    <RouterButton path={'/state-func-props-solution'} text={'State and Funcs as Props (Solution)'}/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/intro-to-redux'} variant={'outlined'} color={'primary'}>
-                        Intro to Redux
-                    </Button>
+                    <RouterButton path={'/intro-to-redux'} text={'Intro to Redux'}/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button component={RouterLink} to={'/intro-to-redux-solution'} variant={'outlined'} color={'primary'}>
-                        Intro to Redux (Solution)
-                    </Button>
+                    <RouterButton path={'/intro-to-redux-solution'} text={'Intro to Redux (Solution)'}/>
                 </Grid>
             </Grid>
         )
