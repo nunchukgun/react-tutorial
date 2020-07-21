@@ -1,11 +1,11 @@
-import {combineReducers} from 'redux'
-import reduxIntro from './reduxIntroReducer'
-import reduxIntroSolution from './reduxIntroSolutionReducer'
+import { combineReducers } from "redux";
+import reduxIntro from "./reduxIntroReducer";
+import reduxIntroSolution from "./reduxIntroSolutionReducer";
 
 const rootReducer = combineReducers({
-    reduxIntro,
-    reduxIntroSolution
-})
+  reduxIntro,
+  reduxIntroSolution,
+});
 
-export default rootReducer
+export default rootReducer;
 //Defining rootReducer as a variable and exporting it makes it testable

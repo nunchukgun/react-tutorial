@@ -1,11 +1,10 @@
 const initialState = {
-    messageText: 'redux default'
-}
+  messageText: "redux default",
+};
 
 export default (state = initialState, action) => {
-    switch (action.type) {
-        
-        default:
-            return state
-    }
-}
+  switch (action.type) {
+    default:
+      return state;
+  }
+};

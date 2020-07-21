@@ -1,10 +1,6 @@
 {
-  "extends": [
-    "react-app"
-  ],
-  "plugins": [
-    "prefer-arrow"
-  ],
+  "extends": ["react-app"],
+  "plugins": ["prefer-arrow"],
   "rules": {
     "semi": [2, "never"],
     "quotes": [2, "single"],
