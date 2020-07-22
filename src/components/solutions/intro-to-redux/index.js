@@ -8,7 +8,7 @@ import PurpleCard from './left-side/PurpleCard'
 import CardContent from '@material-ui/core/CardContent'
 import { connect } from 'react-redux'
 
-const ReduxIntroSolution = (props) => {
+const ReduxIntroSolution = () => {
   return (
     <div style={{ margin: '5%' }}>
       <Grid container spacing={4}>

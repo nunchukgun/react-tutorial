@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import GreenCard from './right-side/GreenCard'
-import { connect } from 'react-redux'
 import WhiteCard from './left-side/WhiteCard'
 
 class ReduxIntro extends React.Component {
@@ -25,9 +24,7 @@ class ReduxIntro extends React.Component {
         </Grid>
       </div>
     )
-  };
+  }
 }
 
-const mapStateToProps = () => ({})
-
-export default connect(mapStateToProps)(ReduxIntro)
+export default ReduxIntro
