@@ -38,6 +38,8 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
     "prettier": "2.0.5"
   }
 }

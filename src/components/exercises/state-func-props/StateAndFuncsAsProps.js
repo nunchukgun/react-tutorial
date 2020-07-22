@@ -1,23 +1,23 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
-import Typography from "@material-ui/core/Typography";
-import GreenCard from "./GreenCard";
-import CardContent from "@material-ui/core/CardContent";
-import PurpleCard from "../../solutions/state-func-props/PurpleCard";
+import React from 'react'
+import Grid from '@material-ui/core/Grid'
+import Card from '@material-ui/core/Card'
+import CardHeader from '@material-ui/core/CardHeader'
+import Typography from '@material-ui/core/Typography'
+import GreenCard from './GreenCard'
+import CardContent from '@material-ui/core/CardContent'
+import PurpleCard from '../../solutions/state-func-props/PurpleCard'
 
 class StateAndFuncsAsProps extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      messageText: "default here",
-    };
+      messageText: 'default here',
+    }
   }
 
   render = () => {
     return (
-      <div style={{ margin: "5%" }}>
+      <div style={{ margin: '5%' }}>
         <Grid container spacing={4}>
           <Grid item xs={6}>
             <Card>
@@ -34,8 +34,8 @@ class StateAndFuncsAsProps extends React.Component {
           </Grid>
         </Grid>
       </div>
-    );
+    )
   };
 }
 
-export default StateAndFuncsAsProps;
+export default StateAndFuncsAsProps

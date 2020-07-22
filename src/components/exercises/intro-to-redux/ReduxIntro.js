@@ -1,44 +1,33 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
-import Typography from "@material-ui/core/Typography";
-import GreenCard from "./GreenCard";
-import CardContent from "@material-ui/core/CardContent";
-import { connect } from "react-redux";
-import PurpleCard from "../../solutions/state-func-props/PurpleCard";
+import React from 'react'
+import Grid from '@material-ui/core/Grid'
+import GreenCard from './GreenCard'
+import { connect } from 'react-redux'
+import WhiteCard from './left-side/WhiteCard'
 
 class ReduxIntro extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      messageText: "default here",
-    };
+      messageText: 'default here',
+    }
   }
 
   render = () => {
     return (
-      <div style={{ margin: "5%" }}>
+      <div style={{ margin: '5%' }}>
         <Grid container spacing={4}>
           <Grid item xs={6}>
-            <Card>
-              <CardHeader
-                title={<Typography>Displayed Message Text: </Typography>}
-              />
-              <CardContent>
-                <PurpleCard messageText={this.state.messageText} />
-              </CardContent>
-            </Card>
+            <WhiteCard messageText={this.state.messageText} />
           </Grid>
           <Grid item xs={6}>
             <GreenCard />
           </Grid>
         </Grid>
       </div>
-    );
+    )
   };
 }
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = () => ({})
 
-export default connect(mapStateToProps)(ReduxIntro);
+export default connect(mapStateToProps)(ReduxIntro)
