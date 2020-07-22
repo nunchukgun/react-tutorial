@@ -5,7 +5,7 @@ import BCSolution from './components/solutions/button-counter/ButtonCounterSolut
 import StateAndFuncsAsProps from './components/exercises/state-func-props/StateAndFuncsAsProps'
 import StateAndFuncsAsPropsSolution from './components/solutions/state-func-props/StateAndFuncsAsPropsSolution'
 import ReduxIntro from './components/exercises/intro-to-redux/ReduxIntro'
-import ReduxIntroSolution from './components/solutions/intro-to-redux/ReduxIntroSolution'
+import ReduxIntroSolution from './components/solutions/intro-to-redux'
 import Home from './components/tableOfContents/Home'
 
 class App extends React.Component {
@@ -37,7 +37,7 @@ class App extends React.Component {
         </Switch>
       </Router>
     )
-  };
+  }
 }
 
 export default App

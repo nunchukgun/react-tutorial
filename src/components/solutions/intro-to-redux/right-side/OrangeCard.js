@@ -1,14 +1,20 @@
 import React from 'react'
 import Card from '@material-ui/core/Card'
 import TextField from '@material-ui/core/TextField'
-import { updateMessageText } from '../ReduxIntroSolutionActions'
-import { connect } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
-const OrangeCard = (props) => {
-  const { messageText, updateMessageText } = props
+const OrangeCard = () => {
+  const dispatch = useDispatch()
+  const messageText = useSelector(
+    (state) => state.reduxIntroSolution.messageText
+  )
 
   const handleChange = (event) => {
-    updateMessageText(event.target.value)
+    const action = {
+      type: 'SOLUTIONS_UPDATE_MESSAGE_TEXT',
+      newMessageText: event.target.value,
+    }
+    dispatch(action)
   }
 
   return (
@@ -18,12 +24,4 @@ const OrangeCard = (props) => {
   )
 }
 
-const mapStateToProps = (state) => ({
-  messageText: state.reduxIntroSolution.messageText,
-})
-
-const actions = {
-  updateMessageText,
-}
-
-export default connect(mapStateToProps, actions)(OrangeCard)
+export default OrangeCard
