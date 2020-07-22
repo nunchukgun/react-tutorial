@@ -1,30 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Grid from '@material-ui/core/Grid'
 import GreenCard from './right-side/GreenCard'
 import WhiteCard from './left-side/WhiteCard'
 
-class ReduxIntro extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      messageText: 'default here',
-    }
-  }
-
-  render = () => {
-    return (
-      <div style={{ margin: '5%' }}>
-        <Grid container spacing={4}>
-          <Grid item xs={6}>
-            <WhiteCard messageText={this.state.messageText} />
-          </Grid>
-          <Grid item xs={6}>
-            <GreenCard />
-          </Grid>
+const ReduxIntro = () => {
+  const [messageText, setMessageText] = useState('default state value')
+  return (
+    <div style={{ margin: '5%' }}>
+      <Grid container spacing={4}>
+        <Grid item xs={6}>
+          <WhiteCard messageText={messageText} />
         </Grid>
-      </div>
-    )
-  }
+        <Grid item xs={6}>
+          <GreenCard />
+        </Grid>
+      </Grid>
+    </div>
+  )
 }
 
 export default ReduxIntro
