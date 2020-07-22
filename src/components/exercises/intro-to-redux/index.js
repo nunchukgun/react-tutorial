@@ -4,6 +4,7 @@ import GreenCard from './right-side/GreenCard'
 import WhiteCard from './left-side/WhiteCard'
 
 const ReduxIntro = () => {
+  //Hint: drop the useState hook and employ `useSelector` from redux instead. Make sure you've set up your reducer first!
   const [messageText, setMessageText] = useState('default state value')
   return (
     <div style={{ margin: '5%' }}>
