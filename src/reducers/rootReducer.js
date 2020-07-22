@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import reduxIntro from './reduxIntroReducer'
-import reduxIntroSolution from './reduxIntroSolutionReducer'
+import reduxIntro from '../components/exercises/intro-to-redux/reducer'
+import reduxIntroSolution from '../components/solutions/intro-to-redux/reducer'
 
 const rootReducer = combineReducers({
   reduxIntro,
