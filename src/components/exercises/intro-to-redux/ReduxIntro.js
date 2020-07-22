@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
-import GreenCard from './GreenCard'
+import GreenCard from './right-side/GreenCard'
 import { connect } from 'react-redux'
 import WhiteCard from './left-side/WhiteCard'
 

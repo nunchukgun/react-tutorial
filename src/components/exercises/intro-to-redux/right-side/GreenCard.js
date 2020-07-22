@@ -9,7 +9,7 @@ class GreenCard extends React.Component {
         <BlueCard />
       </Card>
     )
-  };
+  }
 }
 
 export default GreenCard
