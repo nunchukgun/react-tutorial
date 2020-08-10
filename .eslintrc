@@ -3,7 +3,7 @@
   "plugins": ["prefer-arrow"],
   "rules": {
     "semi": [2, "never"],
-    "quotes": [2, "single"],
+    "quotes": [2, "single", { "avoidEscape": true }],
     "no-var": [2],
     "prefer-arrow/prefer-arrow-functions": [
       "error",
