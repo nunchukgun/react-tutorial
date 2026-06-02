@@ -17,7 +17,7 @@ class StateAndFuncsAsPropsSolution extends React.Component {
 
   changeMessageText = (event) => {
     this.setState({ messageText: event.target.value })
-  };
+  }
 
   render = () => {
     return (
@@ -42,7 +42,7 @@ class StateAndFuncsAsPropsSolution extends React.Component {
         </Grid>
       </div>
     )
-  };
+  }
 }
 
 export default StateAndFuncsAsPropsSolution

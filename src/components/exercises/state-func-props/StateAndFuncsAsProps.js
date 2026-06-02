@@ -35,7 +35,7 @@ class StateAndFuncsAsProps extends React.Component {
         </Grid>
       </div>
     )
-  };
+  }
 }
 
 export default StateAndFuncsAsProps
