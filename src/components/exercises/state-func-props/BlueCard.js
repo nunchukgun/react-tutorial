@@ -9,7 +9,7 @@ class BlueCard extends React.Component {
         <OrangeCard />
       </Card>
     )
-  };
+  }
 }
 
 export default BlueCard

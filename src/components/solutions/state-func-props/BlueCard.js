@@ -15,7 +15,7 @@ class BlueCard extends React.Component {
         />
       </Card>
     )
-  };
+  }
 }
 
 export default BlueCard

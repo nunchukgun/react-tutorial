@@ -13,7 +13,7 @@ class OrangeCard extends React.Component {
         />
       </Card>
     )
-  };
+  }
 }
 
 export default OrangeCard

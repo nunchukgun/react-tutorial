@@ -9,7 +9,7 @@ class PurpleCard extends React.Component {
         <Typography variant={'h3'}>{this.props.messageText}</Typography>
       </Card>
     )
-  };
+  }
 }
 
 export default PurpleCard
